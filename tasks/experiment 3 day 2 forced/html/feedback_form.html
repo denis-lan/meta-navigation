@@ -1,0 +1,59 @@
+<div class="screenBox">
+
+  <!-- TITLE -->
+  <div class="titleBox">
+    <span class="titleSpan"> FEEDBACK FORM </span>
+  </div>
+
+  <!-- FORM -->
+  <form action="javascript:getFeedbackform();" method="POST">
+    <!-- BODY -->
+    <div class="bodyBox">
+      <p>Thank you for completing the experiment! Please answer some questions about how you approached the task and press the 'Submit' button once you are done to submit all your data and continue to the page with your completion code. You may also type any feedback or suggestions you have in any textbox below. The experiment will not be marked complete until you press the 'Submit' button!</p>
+      <br>
+      <table style="position: absolute;
+          width: 80%;
+          height: 50%;
+          left: 50%;
+          margin-left: -40%;
+          border-collapse: collapse;">
+        <tr>
+          <td colspan = '2'>
+            <p> What strategies did you use to complete the task today? Did you ever re-click on squares you had previously clicked on? Why or why not? </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>Answer:</b>
+          </td>
+          <td>
+            <input type="text" id="feedback" style="width: 300px; height: 150px;" placeholder = "Respond here." required> <br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan = '2'>
+            <p> Your answer to this question will <b> not </b> affect your payment on this task. Did you use any memorisation aids (e.g. writing stuff down)? Is there any reason that you think we might not be able to use your data?</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>Answer:</b>
+          </td>
+          <td>
+            <input type="text" id="feedback2" style="width: 300px; height: 150px;" placeholder = "Respond here." required> <br>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="buttonBox"
+            type="submit">
+           Submit
+    </button>
+    
+  </form>
+
+</div>

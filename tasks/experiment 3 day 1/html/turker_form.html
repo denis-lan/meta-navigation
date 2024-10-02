@@ -1,0 +1,70 @@
+<div class="screenBox">
+
+  <!-- TITLE -->
+  <div class="titleBox">
+    <span class="titleSpan"> PARTICIPANT FORM </span>
+  </div>
+
+  <!-- FORM -->
+  <form action="javascript:getTurkerform();goWebsite(html_questionnaire);" method="POST">
+    <!-- BODY -->
+    <div class="bodyBox">
+      <p>We would like to ask you some details about yourself.  We will not record anything about you that can identify you.  This is just so we can see whether there are any trends within the data.</p>
+      <p>Also, the Prolific ID will be used to make sure to make sure we pay you! <b>Please make sure you enter your Prolific ID correctly so that we can link your data across both days of the task!</b></p>
+      <br>
+      <table style="position:         absolute;
+                    width:            300px;
+                    left:             50%;
+                    margin-left:      -150px;
+                    border-collapse:  collapse;">
+        <tr>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>Gender</b>
+          </td>
+          <td>
+            <select id="genderSelect" required>
+                <option selected value=""      >Select</option>
+                <option          value="male"  >Male  </option>
+                <option          value="female">Female</option>
+                <option          value="nonbinary">Non-Binary</option>
+                <option          value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>Age</b>
+          </td>
+          <td>
+            <select id="ageSelect" required>
+              <option selected value=""     >Select</option>
+              <option          value="18-20">18-20 </option>
+              <option          value="21-30">21-30 </option>
+              <option          value="31-40">31-40 </option>
+              <option          value="41-50">41-50 </option>
+              <option          value="51-60">51-60 </option>
+              <option          value="61+"  >61+     </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>Prolific ID</b>
+          </td>
+          <td>
+            <input type="text" id="turkerSelect" required><br>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="buttonBox"
+            type="submit">
+           Submit
+    </button>
+    
+  </form>
+
+</div>

@@ -1,0 +1,441 @@
+<style>
+  /* Add your CSS rules here */
+  tr.dashed-border-bottom {
+    border-bottom: 1px dashed black;
+  }
+
+  tr.solid-border-bottom {
+    border-bottom: 2px solid black;
+  }
+</style>
+<div class="screenBox">
+
+  <!-- TITLE -->
+  <div class="titleBox">
+    <span class="titleSpan"> FEEDBACK FORM </span>
+  </div>
+
+  <!-- FORM -->
+  <form action="javascript:getQuestionnaireform();goWebsite(html_instructions);" method="POST">
+    <!-- BODY -->
+    <div class="bodyBox">
+      <p>Before you begin the study, you will first fill up a few questionnaires. Please note that all questions are compulsory.</p>
+      <br>
+      <table style="position: absolute;
+             width: 80%;
+             height: 50%;
+             left: 50%;
+             margin-left: -40%;
+             border-collapse: collapse;">
+      <tr class = "dashed-border-bottom">
+        <td colspan = '2'>
+          <p align = 'center'> The following statements ask you about your spatial and navigational abilities, preferences, and
+            experiences. After each statement, you should circle a number to indicate your level of
+            agreement with the statement. Select “1” if you strongly agree that the statement applies to you,
+            “7” if you strongly disagree, or some number in between if your agreement is intermediate.
+            Select “4” if you neither agree nor disagree.</p>
+        </td>
+        
+      </tr>
+        <tr class = 'dashed-border-bottom'>
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>1. I am very good at giving directions.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq1" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq1" value="2"> 2<br>
+            <input type="radio" name="sbsodq1" value="3"> 3<br>
+            <input type="radio" name="sbsodq1" value="4"> 4<br>
+            <input type="radio" name="sbsodq1" value="5"> 5<br>
+            <input type="radio" name="sbsodq1" value="6"> 6<br>
+            <input type="radio" name="sbsodq1" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class="dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>2. I have a poor memory for where I left things.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq2" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq2" value="2"> 2<br>
+            <input type="radio" name="sbsodq2" value="3"> 3<br>
+            <input type="radio" name="sbsodq2" value="4"> 4<br>
+            <input type="radio" name="sbsodq2" value="5"> 5<br>
+            <input type="radio" name="sbsodq2" value="6"> 6<br>
+            <input type="radio" name="sbsodq2" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>3. I am very good at judging distances</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq3" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq3" value="2"> 2<br>
+            <input type="radio" name="sbsodq3" value="3"> 3<br>
+            <input type="radio" name="sbsodq3" value="4"> 4<br>
+            <input type="radio" name="sbsodq3" value="5"> 5<br>
+            <input type="radio" name="sbsodq3" value="6"> 6<br>
+            <input type="radio" name="sbsodq3" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>4. My “sense of direction” is very good.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq4" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq4" value="2"> 2<br>
+            <input type="radio" name="sbsodq4" value="3"> 3<br>
+            <input type="radio" name="sbsodq4" value="4"> 4<br>
+            <input type="radio" name="sbsodq4" value="5"> 5<br>
+            <input type="radio" name="sbsodq4" value="6"> 6<br>
+            <input type="radio" name="sbsodq4" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>5. I tend to think of my environment in terms of cardinal directions (N, S, E, W).</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq5" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq5" value="2"> 2<br>
+            <input type="radio" name="sbsodq5" value="3"> 3<br>
+            <input type="radio" name="sbsodq5" value="4"> 4<br>
+            <input type="radio" name="sbsodq5" value="5"> 5<br>
+            <input type="radio" name="sbsodq5" value="6"> 6<br>
+            <input type="radio" name="sbsodq5" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>6. I very easily get lost in a new city.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq6" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq6" value="2"> 2<br>
+            <input type="radio" name="sbsodq6" value="3"> 3<br>
+            <input type="radio" name="sbsodq6" value="4"> 4<br>
+            <input type="radio" name="sbsodq6" value="5"> 5<br>
+            <input type="radio" name="sbsodq6" value="6"> 6<br>
+            <input type="radio" name="sbsodq6" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>7. I enjoy reading maps.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq7" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq7" value="2"> 2<br>
+            <input type="radio" name="sbsodq7" value="3"> 3<br>
+            <input type="radio" name="sbsodq7" value="4"> 4<br>
+            <input type="radio" name="sbsodq7" value="5"> 5<br>
+            <input type="radio" name="sbsodq7" value="6"> 6<br>
+            <input type="radio" name="sbsodq7" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>8. I have trouble understanding directions.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq8" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq8" value="2"> 2<br>
+            <input type="radio" name="sbsodq8" value="3"> 3<br>
+            <input type="radio" name="sbsodq8" value="4"> 4<br>
+            <input type="radio" name="sbsodq8" value="5"> 5<br>
+            <input type="radio" name="sbsodq8" value="6"> 6<br>
+            <input type="radio" name="sbsodq8" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>9. I am very good at reading maps.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq9" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq9" value="2"> 2<br>
+            <input type="radio" name="sbsodq9" value="3"> 3<br>
+            <input type="radio" name="sbsodq9" value="4"> 4<br>
+            <input type="radio" name="sbsodq9" value="5"> 5<br>
+            <input type="radio" name="sbsodq9" value="6"> 6<br>
+            <input type="radio" name="sbsodq9" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>10. I don’t remember routes very well while riding as a passenger in a car.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq10" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq10" value="2"> 2<br>
+            <input type="radio" name="sbsodq10" value="3"> 3<br>
+            <input type="radio" name="sbsodq10" value="4"> 4<br>
+            <input type="radio" name="sbsodq10" value="5"> 5<br>
+            <input type="radio" name="sbsodq10" value="6"> 6<br>
+            <input type="radio" name="sbsodq10" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>11. I don’t enjoy giving directions.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq11" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq11" value="2"> 2<br>
+            <input type="radio" name="sbsodq11" value="3"> 3<br>
+            <input type="radio" name="sbsodq11" value="4"> 4<br>
+            <input type="radio" name="sbsodq11" value="5"> 5<br>
+            <input type="radio" name="sbsodq11" value="6"> 6<br>
+            <input type="radio" name="sbsodq11" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>12. It’s not important to me to know where I am.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq12" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq12" value="2"> 2<br>
+            <input type="radio" name="sbsodq12" value="3"> 3<br>
+            <input type="radio" name="sbsodq12" value="4"> 4<br>
+            <input type="radio" name="sbsodq12" value="5"> 5<br>
+            <input type="radio" name="sbsodq12" value="6"> 6<br>
+            <input type="radio" name="sbsodq12" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>13. I usually let someone else do the navigational planning for long trips.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq13" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq13" value="2"> 2<br>
+            <input type="radio" name="sbsodq13" value="3"> 3<br>
+            <input type="radio" name="sbsodq13" value="4"> 4<br>
+            <input type="radio" name="sbsodq13" value="5"> 5<br>
+            <input type="radio" name="sbsodq13" value="6"> 6<br>
+            <input type="radio" name="sbsodq13" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>14. I can usually remember a new route after I have traveled it only once.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq14" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq14" value="2"> 2<br>
+            <input type="radio" name="sbsodq14" value="3"> 3<br>
+            <input type="radio" name="sbsodq14" value="4"> 4<br>
+            <input type="radio" name="sbsodq14" value="5"> 5<br>
+            <input type="radio" name="sbsodq14" value="6"> 6<br>
+            <input type="radio" name="sbsodq14" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "solid-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>15. I don’t have a very good “mental map” of my environment.</b>
+          </td>
+          <td>
+            <input type="radio" name="sbsodq15" value="1" required> 1 (strongly agree)<br>
+            <input type="radio" name="sbsodq15" value="2"> 2<br>
+            <input type="radio" name="sbsodq15" value="3"> 3<br>
+            <input type="radio" name="sbsodq15" value="4"> 4<br>
+            <input type="radio" name="sbsodq15" value="5"> 5<br>
+            <input type="radio" name="sbsodq15" value="6"> 6<br>
+            <input type="radio" name="sbsodq15" value="7"> 7 (strongly disagree)<br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td colspan = '2'>
+            <p align = 'center'> This questionnaire contains questions about your experience navigating, the strategies you use, and what helps you to navigate. Select the answer for each question that best describes how you navigate, or describe your answer in the space beside “Other” if neither applies.</p>
+          </td>
+          
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>1. When planning a route, do you picture a map of your route or do you picture scenes of what you will see along the way?</b>
+          </td>
+          <td>
+            <input type="radio" id="nsq1" name="nsq1" value="1" onclick="document.getElementById('nsq1_other').required = false;" required> Map<br>
+            <input type="radio" id="nsq1" name="nsq1" value="-1" onclick="document.getElementById('nsq1_other').required = false;"> Scenes<br>
+            <input type="radio" id="nsq1" name="nsq1" value="0" onclick="document.getElementById('nsq1_other').required = true;"> Other: <br>
+            <input type="text" id ="nsq1_other" name="nsq1_other" value="" size="30" maxlength="30">
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>2. Do you consider yourself a good navigator? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq2" value="1"  required> Yes<br>
+            <input type="radio" name="nsq2" value="-1"> No <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>3. Do you find it easy to read and use maps? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq3" value="1"  required> Yes<br>
+            <input type="radio" name="nsq3" value="0"> Somewhat <br>
+            <input type="radio" name="nsq3" value="-1"> No <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>4. How often do you get disoriented while finding your way around? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq4" value="-1"  required> Very often<br>
+            <input type="radio" name="nsq4" value="0"> Somewhat often <br>
+            <input type="radio" name="nsq4" value="1"> Very rarely <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>5. When thinking about a familiar street, how well can you picture the buildings along it? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq5" value="-1"  required> Very clearly<br>
+            <input type="radio" name="nsq5" value="0"> Somewhat clearly <br>
+            <input type="radio" name="nsq5" value="1"> Hardly at all <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>6. Would you give directions to a friend in terms of landmarks (i.e., when you see the subway stop, turn left?) or in terms of map directions (i.e., walk north four blocks, then turn left?)?</b>
+          </td>
+          <td>
+            <input type="radio" name="nsq6" value="-1" onclick="document.getElementById('nsq6_other').required = false;" required> Landmarks<br>
+            <input type="radio" name="nsq6" value="1" onclick="document.getElementById('nsq6_other').required = false;"> Map Directions<br>
+            <input type="radio" name="nsq6" value="0" onclick="document.getElementById('nsq6_other').required = true;"> Other: <br>
+            <input type="text" id ="nsq6_other" name="nsq6_other" value="" size="30" maxlength="30">
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>7. Do you picture travelling a route on street level or from a bird's eye view?</b>
+          </td>
+          <td>
+            <input type="radio" name="nsq7" value="-1" onclick="document.getElementById('nsq7_other').required = false;" required> Street-level<br>
+            <input type="radio" name="nsq7" value="1" onclick="document.getElementById('nsq7_other').required = false;"> Bird's Eye View<br>
+            <input type="radio" name="nsq7" value="0" onclick="document.getElementById('nsq7_other').required = true;"> Other: <br>
+            <input type="text" id ="nsq7_other" name="nsq7_other" value="" size="30" maxlength="30">
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>8. When navigating in an area you know well, do you usually just know where to go or do you need to look around at the surroundings to decide (e.g., coming out of a subway station)? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq8" value="1"  required> Know it<br>
+            <input type="radio" name="nsq8" value="0"> Some of each <br>
+            <input type="radio" name="nsq8" value="-1"> Need to look around <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>9. When travelling along a new route, do you usually remember what buildings you've passed? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq9" value="-1"  required> Yes<br>
+            <input type="radio" name="nsq9" value="0"> Somewhat <br>
+            <input type="radio" name="nsq9" value="1"> Rarely <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>10. Would you prefer to navigate using a list of directions or a map? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq10" value="-1"  required> Directions<br>
+            <input type="radio" name="nsq10" value="0"> Map<br>
+            <input type="radio" name="nsq10" value="1"> No preference <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>11. Do you use landmarks (i.e., familiar buildings) to orient yourself when navigating?</b>
+          </td>
+          <td>
+            <input type="radio" name="nsq11" value="-1"  required> Often<br>
+            <input type="radio" name="nsq11" value="0"> Sometimes <br>
+            <input type="radio" name="nsq11" value="1"> Rarely <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>12. Do you find you're flexible navigating along routes (i.e., you can take new shortcuts easily), or do you prefer to follow the same path every time? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq12" value="1"  required> Flexible<br>
+            <input type="radio" name="nsq12" value="0"> Somewhat flexible <br>
+            <input type="radio" name="nsq12" value="-1"> Prefer the same route <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>13. How easily could you draw a map of an area of the city that you know well?</b>
+          </td>
+          <td>
+            <input type="radio" name="nsq13" value="1"  required> Very easily<br>
+            <input type="radio" name="nsq13" value="0"> Somewhat easily <br>
+            <input type="radio" name="nsq13" value="-1"> Not easily <br>
+             <br>
+          </td>
+        </tr>
+        <tr class = "dashed-border-bottom">
+          <td style="padding-top:10px; padding-bottom:10px;">
+            <b>14. Do you think that you navigate by following a mental map, or working on scene at a time? </b>
+          </td>
+          <td>
+            <input type="radio" name="nsq14" value="1" onclick="document.getElementById('nsq14_other').required = false;" required> Map<br>
+            <input type="radio" name="nsq14" value="-1" onclick="document.getElementById('nsq14_other').required = false;"> Scene at a time<br>
+            <input type="radio" name="nsq14" value="0" onclick="document.getElementById('nsq14_other').required = true;"> Other: <br>
+            <input type="text" id ="nsq14_other" name="nsq14_other" value="" size="30" maxlength="30">
+             <br>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="buttonBox"
+            type="submit">
+           Submit
+    </button>
+    
+  </form>
+
+</div>

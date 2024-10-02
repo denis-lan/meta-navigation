@@ -1,0 +1,54 @@
+
+<meta http-equiv = 'cache-control' content = 'no-cache'>
+<meta http-equiv = 'expires' content = '0'>
+<meta http-equiv = 'pragma' content = 'no-cache'>
+<div class="screenBox">
+
+  <!-- TITLE -->
+  <div class="titleBox">
+    <span class="titleSpan"> INSTRUCTIONS </span>
+  </div>
+
+  <!-- BODY -->
+  <div class="bodyBox">
+    <p>
+      Thank you for participating in our study. In this task, you will click on the controls on the screen to navigate through a grid of objects to a goal location. Please turn your volume on as sound effects will be used.<br>
+    </p>
+    <p>
+      (Please note that you will <b> need a keyboard </b> to participate in this study. If you are on a phone or tablet, this task will not work. This task also <b> does not work with Internet Explorer</b>.)<br>
+    </p>
+    <p>
+      Note that this experiment may be very memory intensive. To ensure the experiment works as intended, <b> please close all other applications and tabs before starting. </b><br>
+    </p>
+    <p>
+      This experiment should take about 50 min.<br>
+    </p>
+    <p>
+      After the last block, it might show a white screen and nothing else. Please be patient! The data is being sent. If it takes longer than 10 minutes and you don't receive your verification code, send us an email (neuronoodle@gmail.com).
+    </p>
+    <p>
+      Now please switch to fullscreen mode in order to start the experiment!
+    </p>
+  </div>
+  
+  <!-- BUTTON -->
+  <button class="buttonBox"
+          type="button"
+          onClick="if(isFullscreen()) {startExperiment();} "
+          id="startButton"
+          disabled>
+         Start
+  </button>
+  
+  <!-- FULLSCREEN -->
+  <button class="buttonBox fullscreenBox"
+          type="button"
+          onClick="
+            onFullscreen();
+            document.getElementById('startButton').disabled = false;
+            "
+          id="fullButton">
+         Go fullscreen
+  </button>
+  
+</div>
