@@ -1,0 +1,20 @@
+name: dl
+channels:
+  - defaults
+dependencies:
+  - stable-baselines3
+  - pip
+  - seaborn
+  - numba
+  - tensorboard
+  - ipykernel
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchaudio
+  - torchvision
+  - pytables
+  - scikit-learn
+  - rpy2
+  - statsmodels
+  - conda-forge::imbalanced-learn
+prefix: /home/denis/anaconda3/envs/dl
